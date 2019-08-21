@@ -14,7 +14,7 @@ section{
     background-color: #ffffff;
     padding: 20px;
     border: 2px solid #dddddd;
-    
+    height: 800px;
 }
 
 img{
@@ -101,6 +101,7 @@ footer{
     width: 100%;
     left:0px;
     bottom: 0px;
+    margin-top: 25px;
 }
 
 #name{
@@ -136,10 +137,12 @@ input[type=submit] {
 }
 
 .box {
-    height: 200px;
-    width: 240px;
+    height: 180px;
+    width: 225px;
     background-color: #dddddd;
     border: 1px solid #a0a0a0;
+    float: left;
+    margin: 5px;
 }
 
 .example {
@@ -150,6 +153,7 @@ input[type=submit] {
     position: relative;
     padding: 1px 0px 1px 0px;
     top: 125px;
+    text-decoration: none;
 }
 
 h3{
@@ -158,13 +162,49 @@ h3{
 
 /*Media Queries*/
 @media screen and (max-width: 980px) {
-
-}
+    section{
+        width: 82%;
+    }
+    .headercontents{
+        width: 100%;
+    }
 
 @media screen and (max-width: 768px) {
-    
+    nav{
+        float: left;
+        margin-top:0 px;
+        position: relative;
+        left: 105px;
+        }
+    header::after{
+        content: "";
+        display: block;
+        clear: both;
+        }
 }
 
 @media screen and (max-width: 640px) {
-    
+    .box{
+        margin-bottom: 20px;
+    }
+    h1{
+        background-color: #4aaaa5;
+        color: #ffffff;
+        padding: 50px 100px 10px 100px;
+        position: relative;
+        left: 20px;
+    }
+    nav{
+        float: left;
+        margin-top:0px;
+        position: relative;
+        left: 111px;
+        padding-bottom: 10px;
+        }
+    header::after{
+        content: "";
+        display: block;
+        clear: both;
+        }
+        
 }
