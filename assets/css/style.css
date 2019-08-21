@@ -218,6 +218,11 @@ h3{
     h1{
         padding: 30px 60px 10px 60px;
     }
+    .biop{
+        font-size: 10px;
+    }
+
+    }
 }
 @media screen and (max-width: 375px) {
     nav{
@@ -229,5 +234,8 @@ h3{
         }
     h1{
         padding: 30px 35px 10px 45px;
+    }
+    .biop{
+        font-size: 12px;
     }
 }
